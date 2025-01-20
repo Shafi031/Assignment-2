@@ -6,3 +6,103 @@
   font-optical-sizing: auto;  
   font-style: normal;
 }
+/* ....................................  */
+/* Primary Color  */
+.c1{
+    color: rgb(17, 17, 17);
+
+}
+.c2{
+    color: rgb(254, 163, 1);
+
+}
+.c3{
+    color: rgb(1, 172, 253);
+
+}
+.c4{
+    color: rgb(5, 212, 223);
+}
+
+.c5{
+    color: rgb(93, 88, 239);      
+}
+/* ................................  */
+
+/* header style start  */
+
+.head-decoration{
+    margin: 20px auto;
+    width: 80%;
+}
+.nav-decoration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.img-dec{
+    width: 62px;
+    height: 62px;
+}
+.logo-dec{
+    font-weight: 700;
+    font-size: 2rem;
+     
+}
+.nav-menu{
+
+}
+.nav-items{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+
+.nav-btn{
+
+}
+.btn-contact{
+    width: 177px;
+    height: 50px;
+    margin: 1px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    border: none;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* header style end  */
+
+@media screen and (max-width:576px){
+    .logo-dec,
+    .nav-menu,
+    .nav-btn{
+        display: none;
+    }
+    .head-decoration{
+        margin: 0px;
+        border-bottom: 1px solid gray;
+    }
+    .img-dec{
+        padding: 10px ;
+        width: 46px;
+        height: 46px;
+    }
+    
+   
+}
