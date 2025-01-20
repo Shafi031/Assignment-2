@@ -33,12 +33,13 @@
 
 .head-decoration{
     margin: 20px auto;
-    width: 80%;
+    max-width: 80%;
 }
 .nav-decoration{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .nav-logo{
     display: flex;
@@ -47,8 +48,8 @@
 
 }
 .img-dec{
-    width: 62px;
-    height: 62px;
+    max-width: 62px;
+    max-height: 62px;
 }
 .logo-dec{
     font-weight: 700;
@@ -56,7 +57,7 @@
      
 }
 .nav-menu{
-
+    gap: 20px;
 }
 .nav-items{
     display: flex;
@@ -68,12 +69,12 @@
 }
 
 
-.nav-btn{
+/* .nav-btn{
 
-}
-.btn-contact{
-    width: 177px;
-    height: 50px;
+} */
+.btn-primary{
+    max-width: 177px;
+    max-height: 50px;
     margin: 1px ;
     justify-content: center;
     align-items: center;
@@ -88,22 +89,89 @@
 
 /* header style end  */
 
+/* hero section start  */
+
+#enroll-c{
+    background: rgb(17, 17, 17);
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-des{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-title{
+    max-width: 640px;
+    max-height: 183px;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 50px 0;
+}
+.hero-para{
+    font-weight: 400;
+    font-size: 1.25rem;
+    max-width: 640px;
+    max-height: 50px;
+    margin-bottom: 30px;
+}
+/* hero section end  */
+
+
+
+
+
+
 @media screen and (max-width:576px){
     .logo-dec,
     .nav-menu,
     .nav-btn{
         display: none;
     }
-    .head-decoration{
-        margin: 0px;
+    /* .head-decoration{
+        
+        flex-direction: column;
+        margin-bottom: 100px;
+    } */
+    .nav-decoration{
         border-bottom: 1px solid gray;
-        width: 100%;
+
     }
     .img-dec{
         padding: 10px ;
-        width: 46px;
-        height: 46px;
+        max-width: 46px;
+        max-height: 46px;
     }
-    
+
+   
+    .hero-des ,.hero,.head-decoration{
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .hero-des{
+        align-items: center;
+    }
+
+    .hero-para{
+        margin-top: 120px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero-title,.hero-para{
+        text-align: center;
+    }
+   
    
 }
