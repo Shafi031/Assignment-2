@@ -97,6 +97,7 @@
     .head-decoration{
         margin: 0px;
         border-bottom: 1px solid gray;
+        width: 100%;
     }
     .img-dec{
         padding: 10px ;
