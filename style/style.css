@@ -294,6 +294,12 @@
     padding: 30px;
     text-align: center;
 }
+
+#view-all{
+    background: #000;
+    margin: 30px 700px;
+   
+}
 /* main section :end  */
 
 /* footer  */
@@ -318,6 +324,7 @@
     background: rgb(1, 172, 253);
     color: white;
     align-content: center;
+    
 }
 
 /* 
